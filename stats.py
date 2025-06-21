@@ -73,6 +73,7 @@ height = 12
 plt.figure(figsize=(width, height))
 sns.regplot(x="agtron_ground", y="agtron_roast", data=df_cleaned)
 plt.ylim(0,)
+plt.title('Correlation of agtron_ground and agtron_roast', fontsize=14)
 plt.show() # Add plt.show() to display the plot if you're not seeing it automatically
 
 
@@ -96,6 +97,7 @@ plt.annotate('Massive Outlier',
              xytext=(40, 700),       # Where the label appears
              fontsize=20,
              color='red')
+plt.title('Correlation of agtron_ground and agtron_roast', fontsize=14)
 plt.show() # Add plt.show() to display the plot if you're not seeing it automatically
 
 mse = mean_squared_error(df_cleaned['agtron_roast'], yhat)
@@ -109,12 +111,16 @@ height = 15
 plt.figure(figsize=(width, height))
 sns.regplot(x="agtron_ground", y="agtron_roast", data=df_cleaned)
 plt.ylim(0,)
+plt.title('Correlation of agtron_ground and agtron_roast', fontsize=14)
 plt.show() # Add plt.show() to display the plot if you're not seeing it automatically
 
 width = 15
 height = 15
 plt.figure(figsize=(width, height))
 sns.residplot(x=df_cleaned['agtron_ground'], y=df_cleaned['agtron_roast'])
+plt.xlabel("Agtron Ground")
+plt.ylabel("Residuals of Agtron Roast")
+plt.title("Residual Plot: Agtron Roast vs. Agtron Ground", fontsize=14)
 plt.show()
 
 lm = LinearRegression()
