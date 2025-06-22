@@ -1,4 +1,4 @@
-# Welcome to Data Analysis with Top-Rated Coffee! ☕️
+# Welcome to Data Analysis with Top-Rated Coffee (NO JUPYTER NOTEBOOK HERE)! ☕️
 
 Let's explore the highest-rated coffees from coffeereviews.com. This is an Exploratory Data Analysis, so enjoy a variety of querying, modeling, and statistical techniques used to find interesting trends and insights about these top-rated coffees. The data table used is from kaggle.com, which can be found here: https://www.kaggle.com/datasets/asimmahmudov/top-rated-coffee.
 
